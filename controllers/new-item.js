@@ -13,7 +13,7 @@ Hoata.NewItemController = Ember.Controller.extend({
       });
       item.save();
 
-      var lot = this.get('controller.lot.model');
+      var lot = this.get('controllers.lot.model');
       lot.get('items').pushObject(item);
       lot.save();
 

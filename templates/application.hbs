@@ -1,0 +1,17 @@
+<div class="container">
+  <nav class="navbar navbar-default" role="navgation">
+    <h1>House of a Thousand Auctions</h1>
+    <ul class="nav navbar-nav">
+      <li className="nav-link">{{#link-to 'lots'}}Lots{{/link-to}}</li>
+      <li class="nav-link">{{#link-to 'auctions'}}Auctions{{/link-to}}</li>
+      <li class="nav-link">{{#link-to 'add-lot'}}Add Lot{{/link-to}}</li>
+      <li class="nav-link">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+    </ul>
+  </nav>
+
+  <div class="row">
+    <div class='col-md-12'>
+      {{outlet}}
+    </div>
+  </div>
+</div>

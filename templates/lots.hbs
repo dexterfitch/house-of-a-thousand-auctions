@@ -1,6 +1,13 @@
-<div class="col-md-12">
-  <h4>Please choose a lot below to view items</h4>
-  <!-- {{#each}} -->
-    <!-- {{thumbImages}}{{title}}{{brief description}}{{lotId}}{{items}}{{lotOwner}} -->
-  <!-- {{/each}} -->
-</div>
+<h4>Please choose a lot below to view items</h4>
+
+{{#each}}
+  <div class="lot">
+    <h5>{{#link-to 'lot' this.id}}{{title}}{{/link-to}}</h5>
+    <p>{{description}}</p>
+    <p>{{owner}}</p>
+  </div>
+{{/each}}
+
+<!-- {{#each}}
+  {{thumbImages}}{{title}}{{brief description}}{{lotId}}{{items}}{{lotOwner}}
+{{/each}} -->

@@ -4,7 +4,7 @@
     <title>House of a Thousand Auctions</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Almendra:400,700|Karla:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Almendra:400,700|Karla:400,400italic' type='text/css'>
 
     <script src='libs/jquery-1.11.2.js'></script>
     <script src='libs/ember-1.10.0.debug.js'></script>
@@ -17,9 +17,17 @@
     <script src='router.js'></script>
     <script src='store.js'></script>
 
+    <script src='controllers/add-lot.js'></script>
+    <script src='controllers/new-item.js'></script>
+
+    <script src='routes/lot.js'></script>
+    <script src='routes/lots.js'></script>
+
+    <script src='models/lot.js'></script>
+    <script src='models/item.js'></script>
 
     <script>
-      EmberHandlebarsLoader.loadTemplates(['application', 'lots', 'add-lot', 'contact', 'auctions']);
+      EmberHandlebarsLoader.loadTemplates(['application', 'lots', 'add-lot', 'contact', 'auctions', 'lot', 'new-item']);
     </script>
 
   </head>

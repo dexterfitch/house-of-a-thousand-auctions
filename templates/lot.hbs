@@ -1,0 +1,16 @@
+<h2>{{title}}</h2>
+<h4>{{description}}</h4>
+<h6>{{owner}}</h6>
+
+{{#each items}}
+  <p>{{name}}</p>
+  <p>{{description}}</p>
+  <p>{{owner}}</p>
+  <p>{{price}}</p>
+  <p>{{premierYear}}</p>
+  <p>{{movieName}}</p>
+{{/each}}
+
+<p>{{#link-to 'new-item' this.id class="btn btn-default"}}New Item{{/link-to}}</p>
+
+{{outlet}}

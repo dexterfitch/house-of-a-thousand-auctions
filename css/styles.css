@@ -27,6 +27,10 @@ nav {
   font-size: 16px;
 }
 
-#ember310, #ember311, #ember312, #ember313 {
+.property-heading {
   color: #83A024;
+}
+
+.well {
+  background: #444;
 }

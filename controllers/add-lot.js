@@ -9,7 +9,7 @@ Hoata.AddLotController = Ember.Controller.extend({
       });
 
       addLot.save();
-      this.transtionToRoute('lots');
+      this.transitionToRoute('lots');
     }
   }
 });

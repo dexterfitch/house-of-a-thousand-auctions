@@ -3,12 +3,22 @@
 <h6>{{owner}}</h6>
 
 {{#each items}}
-  <p>{{name}}</p>
-  <p>{{description}}</p>
-  <p>{{owner}}</p>
-  <p>{{price}}</p>
-  <p>{{premierYear}}</p>
-  <p>{{movieName}}</p>
+  <div class="item well" >
+    <h4>{{name}}</h4>
+      <p>
+        <span class="property-heading">Description:</span><br>
+        {{description}}
+      </p>
+      <p>
+        <span class="property-heading">Movie Title:</span> {{movieName}} ({{premierYear}})
+      </p>
+      <p>
+        <span class="property-heading">Owner:</span> {{owner}}
+      </p>
+      <p>
+        <span class="property-heading">Price:</span> {{price}}
+      </p>  
+  </div>
 {{/each}}
 
 <p>{{#link-to 'new-item' this.id class="btn btn-default"}}New Item{{/link-to}}</p>

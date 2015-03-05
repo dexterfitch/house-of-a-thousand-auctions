@@ -15,6 +15,7 @@ Hoata.LotController = Ember.ObjectController.extend({
     },
     delete: function() {
       if (confirm('I will DESTROY you!')) {
+        debugger;
         this.get('model').destroyRecord();
         this.transitionToRoute('lots');
       }

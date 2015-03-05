@@ -1,34 +1,48 @@
-<h2>{{title}}</h2>
-<h4>{{description}}</h4>
-<h6>{{owner}}</h6>
-
-{{#each items}}
-  <div class="item well row">
-    <h4>{{name}}</h4>
-
-    <div class='col-md-3'>
-      <img {{bind-attr src=image}}/>
-    </div>
-
-    <div class='col-md-9'>
-      <p>
-        <span class="property-heading">Description:</span><br>
-        {{description}}
-      </p>
-      <p>
-        <span class="property-heading">Movie Title:</span> {{movieName}} ({{premierYear}})
-      </p>
-      <p>
-        <span class="property-heading">Owner:</span> {{owner}}
-      </p>
-      <p>
-        <span class="property-heading">Price:</span> {{price}}
-      </p>
-    </div>
-
+<div class="row">
+  <div class="col-md-12">
+    <h2>{{title}}</h2>
   </div>
-{{/each}}
+  <div class='col-md-10'>
+    <h4>{{description}}</h4>
+    <h6>{{owner}}</h6>
+  </div>
+  <div class='col-md-2'>
+    <span {{action 'delete'}}><i class="fa fa-bomb fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span {{action 'edit'}}><i class="fa fa-cog fa-spin fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="add-item-btn">{{#link-to 'newItem' this.id}}<i class="fa fa-plus-square fa-2x"></i>{{/link-to}}</span>
+  </div>
+</div>
 
-<p>{{#link-to 'newItem' this.id class="btn btn-default"}}New Item{{/link-to}}</p>
+<div class="row">
+  <div class='col-md-12'>
+    {{#each items}}
+      <div class="item well row">
+        <h4>{{name}}</h4>
+
+        <div class='col-md-3'>
+          <img {{bind-attr src=image}}/>
+        </div>
+
+        <div class='col-md-9'>
+          <p>
+            <span class="property-heading">Description:</span><br>
+            {{description}}
+          </p>
+          <p>
+            <span class="property-heading">Movie Title:</span> {{movieName}} ({{premierYear}})
+          </p>
+          <p>
+            <span class="property-heading">Owner:</span> {{owner}}
+          </p>
+          <p>
+            <span class="property-heading">Price:</span> {{price}}
+          </p>
+        </div>
+
+      </div>
+    {{/each}}
+  </div>
+</div>
+
 
 {{outlet}}

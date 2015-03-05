@@ -1,12 +1,12 @@
 <h4>Please choose a lot below to view items</h4>
 
 <div class='row'>
-  {{#each}}
+  {{#each itemController="lot"}}
     <div class="lot well col-md-4">
       <div class='col-md-3'>
-         pic here! <!-- {{image}} -->
+         pic here! {{image}}
       </div>
-      <div class='col-md-9'>
+      <div class='col-md-9' {{action 'sayHello'}}>
         <h5>{{#link-to 'lot' this.id}}{{title}}{{/link-to}}</h5>
         <p>{{description}}</p>
         <p>{{owner}}</p>

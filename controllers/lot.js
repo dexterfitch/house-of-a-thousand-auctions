@@ -1,4 +1,10 @@
 Hoata.LotController = Ember.ObjectController.extend({
+  // image: function() {
+  //   var firstItem = this.get('model.items.firstObject');
+  //   var item = this.store.find('item', firstItem.id);
+  //   // debugger;
+  //   return item.get('name');
+  // }.property(),
   isEditing: false,
   actions: {
     edit: function() {

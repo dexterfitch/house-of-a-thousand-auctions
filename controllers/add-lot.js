@@ -7,8 +7,8 @@ Hoata.AddLotController = Ember.Controller.extend({
         owner: this.get('owner'),
         date: new Date()
       });
-
       addLot.save();
+
       this.transitionToRoute('lots');
     }
   }

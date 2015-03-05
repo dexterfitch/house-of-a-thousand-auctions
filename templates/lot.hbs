@@ -3,8 +3,14 @@
 <h6>{{owner}}</h6>
 
 {{#each items}}
-  <div class="item well" >
+  <div class="item well row">
     <h4>{{name}}</h4>
+
+    <div class='col-md-3'>
+      <img {{bind-attr src=image}}/>
+    </div>
+
+    <div class='col-md-9'>
       <p>
         <span class="property-heading">Description:</span><br>
         {{description}}
@@ -17,10 +23,12 @@
       </p>
       <p>
         <span class="property-heading">Price:</span> {{price}}
-      </p>  
+      </p>
+    </div>
+
   </div>
 {{/each}}
 
-<p>{{#link-to 'new-item' this.id class="btn btn-default"}}New Item{{/link-to}}</p>
+<p>{{#link-to 'newItem' this.id class="btn btn-default"}}New Item{{/link-to}}</p>
 
 {{outlet}}

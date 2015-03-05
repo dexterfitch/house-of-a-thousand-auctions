@@ -6,14 +6,18 @@
     <h4>{{description}}</h4>
     <h6>{{owner}}</h6>
   </div>
-  <div class='col-md-2'>
-    <span {{action 'delete'}}><i class="fa fa-bomb fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
-    <span {{action 'edit'}}><i class="fa fa-cog fa-spin fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
-    <span id="add-item-btn">{{#link-to 'newItem' this.id}}<i class="fa fa-plus-square fa-2x"></i>{{/link-to}}</span>
+  <div class='col-md-2 align-div-right'>
+    <span class="lot-action-menu">
+      <span {{action 'delete'}}><i class="fa fa-bomb fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span {{action 'edit'}}><i class="fa fa-cog fa-spin fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="add-item-btn">{{#link-to 'newItem' this.id}}<i class="fa fa-plus-square fa-2x"></i>{{/link-to}}</span>
+    </span>
   </div>
 </div>
 
+
 <div class="row">
+{{outlet}}
   <div class='col-md-12'>
     {{#each items}}
       <div class="item well row">
@@ -38,11 +42,7 @@
             <span class="property-heading">Price:</span> {{price}}
           </p>
         </div>
-
       </div>
     {{/each}}
   </div>
 </div>
-
-
-{{outlet}}

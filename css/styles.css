@@ -43,6 +43,21 @@ img {
   padding: 0;
 }
 
+.lot {
+  height: 180px;
+  margin-right: 10px;
+}
+
+.lot-action-menu {
+  background: #444;
+  border-radius: 5px;
+  padding: 1.5em 1em 1em 1em;
+}
+
+.no-padding-div {
+  padding: 0;
+}
+
 .property-heading {
   color: #83A024;
 }
@@ -58,6 +73,12 @@ img {
 input {
   margin-right: 1em;
 }
+
+.align-div-right{
+  text-align: right;
+}
+
 .ember-text-field, .ember-text-area {
   background: #444;
+  color: #CCC;
 }

@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Almendra:400,700|Karla:400,400italic' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fullcalendar.css">
 
     <script src='libs/jquery-1.11.2.js'></script>
+    <script src='libs/moment.min.js'></script>
+    <script src='libs/fullcalendar.js'></script>
     <script src='libs/ember-1.10.0.debug.js'></script>
     <script src='libs/ember-template-compiler-1.10.0.js'></script>
     <script src='libs/ember-handlebars-loader-0.0.2.js'></script>
@@ -17,19 +20,23 @@
     <script src='hoata.js'></script>
     <script src='router.js'></script>
     <script src='store.js'></script>
+    <script src='scripts.js'></script>
 
     <script src='controllers/lots.js'></script>
     <script src='controllers/newItem.js'></script>
     <script src='controllers/lot.js'></script>
+    <script src='controllers/auctions.js'></script>
 
     <script src='routes/lot.js'></script>
     <script src='routes/lots.js'></script>
+    <script src='routes/auction.js'></script>
 
     <script src='models/lot.js'></script>
     <script src='models/item.js'></script>
 
+
     <script>
-      EmberHandlebarsLoader.loadTemplates(['application', 'lots', 'add-lot', 'contact', 'auctions', 'lot', 'newItem']);
+      EmberHandlebarsLoader.loadTemplates(['application', 'lots', 'contact', 'auctions', 'lot', 'newItem']);
     </script>
 
   </head>
